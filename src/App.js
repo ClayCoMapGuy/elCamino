@@ -37,6 +37,6 @@ export function Navbar() {
   )
 }
 
-export default App;
+
 
 //<img src={logo} className="App-logo" alt="logo" />
