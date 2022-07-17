@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { App, Navbar } from './App';
+import { App } from './App';
+import { Navbar } from './Navigation/Navbar'
+import { Cards } from './Navigation/QuestionCards'
 import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
