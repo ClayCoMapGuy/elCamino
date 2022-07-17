@@ -34,4 +34,5 @@ export const Questions = [
     nextPage : 4},
     ];
 
+    //each array is a 'group' of cards displayed on screen at one time, values are the index of the 'Questions' array above.
 export const QuestionGroups = [[0,1,2],[3,4,5],[6],[7,8,9],[]];
