@@ -1,7 +1,7 @@
 import '../App.css';
 import clayconn from '../Graphics/clayconn.svg';
 
-export default function Navbar() {
+export function Navbar() {
   return (
     <div className="Navbar">
       <div>

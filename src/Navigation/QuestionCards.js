@@ -19,16 +19,17 @@ export function Cards() {
         <p>Page: {value + 1} of {QuestionGroups.length}</p>    
          <ul>{
             QuestionGroups[value].map(cardList=>( //Maps the QuestionGroups array
-                 <li>
-                 <button 
-                 key={cardList.id} //Key to keep items organized per React rules
-                 className="" //CSS class
-                 //onClick function that changes the state to the ID of the question displayed.
-                 onClick={()=>setValue((Questions[cardList].nextPage))}> 
-                 {Questions[cardList].questionText} - to page {Questions[cardList].nextPage + 1}
-                 </button>
-                 </li>
-                 ))
+                //Key to keep items organized per React rules
+                <li key={Questions[cardList].id}> 
+                    <button 
+                  
+                        className="" //CSS class
+                        //onClick function that changes the state to the ID of the question displayed.
+                        onClick={()=>setValue((Questions[cardList].nextPage))}> 
+                        {Questions[cardList].questionText} - to page {Questions[cardList].nextPage + 1}
+                    </button>
+                </li>
+                ))
          }</ul>  
          </div>
          )   
