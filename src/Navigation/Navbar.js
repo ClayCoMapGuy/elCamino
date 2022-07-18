@@ -11,7 +11,7 @@ export  function Navbar() {
       </div>
       <ul className="menuItems">
       <li><a href="#">Clayton County Permitting</a></li>
-      <li><a href="claytoncountyga.gov/">Go to Claytoncountyga.gov</a></li>
+      <li><a href="https://claytoncountyga.gov/">Go to Claytoncountyga.gov</a></li>
       <li></li>
       <li></li>
       </ul>
