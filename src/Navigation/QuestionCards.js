@@ -15,18 +15,22 @@ export function Cards() {
     const [value, setValue] = useState(0); //standard function component state changing 
     
     return (
-        <div>
+        <div className='OptionGrid'>
         <p>Page: {value + 1} of {QuestionGroups.length}</p>    
+        <button onClick={()=>setValue(0)}>Back to start</button>
          <ul>{
             QuestionGroups[value].map(cardList=>( //Maps the QuestionGroups array
                 //Key to keep items organized per React rules
-                <li key={Questions[cardList].id}> 
+                <li 
+                className="questionListItems"
+                key={Questions[cardList].id}> 
                     <button 
-                  
-                        className="" //CSS class
+                        className="questionButtons" //CSS class
                         //onClick function that changes the state to the ID of the question displayed.
                         onClick={()=>setValue((Questions[cardList].nextPage))}> 
-                        {Questions[cardList].questionText} - to page {Questions[cardList].nextPage + 1}
+                        <div className='Button_inline_image'>Placeholder for image</div>
+                        <div className='Button_inline_text'>{Questions[cardList].questionText} - to page {Questions[cardList].nextPage + 1}</div>
+                        <div className='Button_inline_icon'>Placeholder for arrow image</div>
                     </button>
                 </li>
                 ))

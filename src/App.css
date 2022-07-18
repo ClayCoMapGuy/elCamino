@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  background-color: #c2c2c2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-logo {
@@ -14,14 +22,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  
+  
+  
+  
+  
+  
+  
 }
 
 .App-link {
@@ -42,8 +50,121 @@
   align-items: center;
   min-height: 3%;
   max-height: 7%;
-  background-color: #d9d9d6;
+  background-color: #282c34;
   font-size: calc(10px + 1vmin);
   color: #343579;
   text-align: center;
 }
+
+.menuItems {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#282c34;
+  ;
+  
+}
+
+.menuItems li {
+  float: left;
+}
+
+.menuItems li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menuItems li a:hover {
+  background-color: rgb(117, 115, 115);
+}
+
+.OptionGrid{
+/* background-color: red;   */
+max-width: 1600px;
+width: 900px;
+flex: 1;
+}
+
+.questionListItems{
+/* background-color: black; */
+
+
+}
+
+.questionButtons {
+  min-height: calc(120px + 1vh);
+  min-width: calc(92px + 1vh);
+  width: 700px;
+  /* align-items: center; */
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #1b2a3f;
+  text-align: left;
+  margin: calc(10px + 1vh);
+  cursor: pointer;
+  padding: 10px;
+  
+}
+
+ul {
+  list-style-type: none;
+  
+}
+
+.questionButtons:hover {
+  border: solid blue 1px;
+}
+
+.questionButtons {
+  flex-direction: row;
+display: inline-flex;
+}
+
+.Button_inline_image{
+  display: flex;
+  width:100px;
+  height:100px;
+  flex-shrink: 0;
+  padding: 6px;
+  border: solid 1px purple;
+}
+
+.Button_inline_text{
+  display: flex;
+  width: calc(100% - 100px);
+  padding: 0 50px 0 10px;
+  /* background-color: green; */
+  margin: auto;
+  font-size: 25px;
+}
+
+.Button_inline_icon{
+  display: flex;
+  color:rgb(117, 115, 115);
+  border: 1px solid orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
