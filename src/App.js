@@ -1,14 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
+import { Cards } from './Navigation/QuestionCards'
 
-export default function App() {
+export function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Some placeholder words
-        </p>
-      </header>
+      <Cards />
     </div>
   );
 }
