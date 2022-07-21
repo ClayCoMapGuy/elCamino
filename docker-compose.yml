@@ -11,4 +11,5 @@ services:
       - ./:/home/node/elCamino
     ports:
       - "3000:3000"
+    run: "npm install"
     command: "npm start"
