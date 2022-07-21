@@ -1,5 +1,5 @@
 # Install Docker Extension, hover INSTRUCTION, to get information
-FROM node:lts
+FROM node:16
 ENV NODE_ENV=development
 WORKDIR /home/node/elCamino
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
