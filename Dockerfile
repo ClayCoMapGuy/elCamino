@@ -1,4 +1,4 @@
-# Install Docker Extension, hover INSTRUCTION, to get information
+# Install Docker Extension, then hover the instruction to get information
 FROM node:16
 ENV NODE_ENV=development
 WORKDIR /home/node/elCamino

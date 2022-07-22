@@ -1,15 +1,28 @@
-version: '3.4'
+version: '3.7'
 
 services:
-  node:
+  db:
+    image: postgis:14-3.2
+#    restart: always
+    environment: 
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=webdev
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  web:
     image: node:16
     user: "node"
     working_dir: /home/node/elCamino
     environment:
       - NODE_ENV=development
     volumes:
-      - ./:/home/node/elCamino
+      -  /home/node/elCamino
+    depends_on:
+      - db
     ports:
-      - "3000:3000"
+      - '3000:3000'
     run: "npm install"
     command: "npm start"
