@@ -19,9 +19,12 @@ services:
     environment:
       - NODE_ENV=development
     volumes:
-      -  /home/docker/elCamino/web
+      type: volume
+      source: .
+      target: /home/docker/elCamino/web
     depends_on:
       - db
     ports:
       - '3000:3000'
     command: "npm start"
+
