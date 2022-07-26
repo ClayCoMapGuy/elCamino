@@ -11,7 +11,7 @@ services:
     ports:
       - '5432:5432'
     volumes:
-      - /home/elCamino/db
+      - /home/docker/elCamino/db
   web:
     image: node:16
     user: "node"
@@ -24,5 +24,4 @@ services:
       - db
     ports:
       - '3000:3000'
-    run: "chown -R node /home/docker/elCamino/web"
     command: "npm start"
