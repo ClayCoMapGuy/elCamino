@@ -4,7 +4,7 @@ ENV NODE_ENV=development
 WORKDIR /home/docker/elCamino/web
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN npm install
-COPY . .
+COPY . ./home/docker/elCamino/web
 EXPOSE 3000
 RUN chown -R node /home/docker/elCamino/web
 USER node
