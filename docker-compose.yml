@@ -14,7 +14,7 @@ services:
       - /home/elCamino/db
   web:
     image: node:16
-    user: "rzimmerman"
+    user: "node"
     working_dir: /home/docker/elCamino/web
     environment:
       - NODE_ENV=development
