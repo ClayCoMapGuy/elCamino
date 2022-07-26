@@ -7,6 +7,5 @@ RUN npm install
 COPY . .
 EXPOSE 3000
 RUN chown -R node /home/docker/elCamino/web
-RUN npm install
 USER node
 CMD ["npm", "start"]
