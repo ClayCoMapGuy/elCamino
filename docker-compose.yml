@@ -11,7 +11,7 @@ services:
     ports:
       - '5432:5432'
     volumes:
-      - /home/docker/elCamino/db
+      - ./db:/db
   web:
     image: node:16
     user: "node"
