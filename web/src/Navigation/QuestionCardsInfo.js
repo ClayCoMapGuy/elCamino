@@ -2,7 +2,7 @@
 
 
 export const Questions = [
-    {questionText : 'Building Permit', 
+    {questionText : 'Building Permits', 
     id : 0, 
     nextPage : 1},
     {questionText : 'Business License', 
