@@ -24,4 +24,5 @@ services:
       - db
     ports:
       - '3000:3000'
+    run: "chown -R node /home/docker/elCamino/web"
     command: "npm start"
