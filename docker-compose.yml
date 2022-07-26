@@ -7,15 +7,15 @@ services:
     environment: 
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=webdev
+      - POSTGRES_DB=doitwebdev01
     ports:
       - '5432:5432'
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - pgdata:/home/elCamino/db
   web:
     image: node:16
     user: "node"
-    working_dir: /home/node/elCamino
+    working_dir: /home/docker/elCamino
     environment:
       - NODE_ENV=development
     volumes:
