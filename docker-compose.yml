@@ -15,11 +15,11 @@ services:
   web:
     image: node:16
     user: "node"
-    working_dir: /home/docker/elCamino
+    working_dir: /home/docker/elCamino/web
     environment:
       - NODE_ENV=development
     volumes:
-      -  /home/node/elCamino
+      -  /home/node/elCamino/web
     depends_on:
       - db
     ports:
