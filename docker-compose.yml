@@ -24,7 +24,7 @@ services:
       - db
     ports:
       - '3000:3000'
-    command: "npm start"
+    command: "npm install && npm start"
 
 volumes:
   db_data:
