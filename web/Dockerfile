@@ -3,8 +3,7 @@ FROM node:16
 USER node
 ENV NODE_ENV=development
 WORKDIR /home/node/elCamino
-COPY . .
-RUN chown -R node /home/node/elCamino
+COPY --chown=node:node . .
 RUN npm install
 EXPOSE 3000
 CMD ["npm", "start"]
