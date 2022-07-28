@@ -5,5 +5,4 @@ WORKDIR /home/node/elCamino
 COPY --chown=node:node . .
 EXPOSE 3000
 RUN npm install
-USER node
 CMD ["npm", "start"]
