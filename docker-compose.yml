@@ -11,17 +11,17 @@ services:
     ports:
       - '5432:5432'
     volumes:
-      - ./db:/db
+      - ./db:/var/lib/postgresql/data
   web:
     image: node:16
     user: "node"
-    working_dir: /web
+    working_dir: /home/node
     environment:
       - NODE_ENV=development
     volumes:
-      - ./web:/web
+      - ./web:/home/node
     depends_on:
       - db
     ports:
       - '3000:3000'
-    command: "sudo chown -R node /web && npm start"
+    command: "npm start"
