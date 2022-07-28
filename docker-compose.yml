@@ -11,7 +11,7 @@ services:
     ports:
       - '5432:5432'
     volumes:
-      - ./db:/var/lib/postgresql/data
+      - db_data:/var/lib/postgresql/data
   web:
     image: node:16
     user: "node"
@@ -25,3 +25,6 @@ services:
     ports:
       - '3000:3000'
     command: "npm start"
+
+volumes:
+  db_data:
