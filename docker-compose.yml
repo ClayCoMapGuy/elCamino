@@ -6,6 +6,7 @@ services:
     restart: always
     environment: 
       - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=doitwebdev01
     ports:
       - '5432:5432'
@@ -24,4 +25,4 @@ services:
     ports:
       - '3000:3000'
     command: "chown -R node /web && npm start"
-
+    
