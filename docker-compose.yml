@@ -24,5 +24,4 @@ services:
       - db
     ports:
       - '3000:3000'
-    command: "chown -R node /web && npm start"
-    
+    command: "sudo chown -R node /web && npm start"
