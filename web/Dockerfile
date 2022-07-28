@@ -4,6 +4,6 @@ USER node
 ENV NODE_ENV=development
 WORKDIR /home/node/elCamino
 COPY --chown=node:node . .
-RUN npm install
+RUN sudo npm install
 EXPOSE 3000
 CMD ["npm", "start"]
