@@ -4,6 +4,6 @@ ENV NODE_ENV=development
 WORKDIR /home/node/elCamino
 COPY --chown=node:node . .
 EXPOSE 3000
-USER node
 RUN npm install
+USER node
 CMD ["npm", "start"]
