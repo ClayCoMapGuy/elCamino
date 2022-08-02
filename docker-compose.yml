@@ -15,7 +15,7 @@ services:
   web:
     build: ./web
     ports:
-      - '5000:5000'
+      - '3000:3000'
 
 volumes:
   db_data:
