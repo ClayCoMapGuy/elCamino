@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   db:
-    image: postgis/postgis:14-3.2
+    image: 'postgis/postgis:14-3.2'
     restart: always
     environment: 
       - POSTGRES_USER=postgres
@@ -13,18 +13,9 @@ services:
     volumes:
       - db_data:/var/lib/postgresql/data
   web:
-    image: node:16
-    user: "node"
-    working_dir: /home/node
-    environment:
-      - NODE_ENV=development
-    volumes:
-      - ./web:/home/node
-    depends_on:
-      - db
+    build: ./web
     ports:
-      - '3000:3000'
-    command: "npm install && npm start"
+      - '5000:5000'
 
 volumes:
   db_data:
