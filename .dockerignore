@@ -2,7 +2,7 @@
 **/.dockerignore
 **/.env
 **/.git
-**/.gitignore
+/.gitignore
 **/.project
 **/.settings
 **/.toolstarget
@@ -15,7 +15,7 @@
 **/docker-compose*
 **/compose*
 **/Dockerfile*
-**/node_modules
+/web/node_modules
 **/npm-debug.log
 **/obj
 **/secrets.dev.yaml
