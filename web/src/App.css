@@ -122,7 +122,8 @@ ul {
 
 .questionButtons {
   flex-direction: row;
-display: inline-flex;
+  display: inline-flex;
+  align-items: center;
 }
 
 .Button_inline_image{
@@ -131,7 +132,7 @@ display: inline-flex;
   height:100px;
   flex-shrink: 0;
   padding: 6px;
-  border: solid 1px purple;
+  /* border: solid 1px purple; */
 }
 
 .Button_inline_text{
@@ -146,7 +147,9 @@ display: inline-flex;
 .Button_inline_icon{
   display: flex;
   color:rgb(117, 115, 115);
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
+  width:40px;
+  height:40px;
 }
 
 
